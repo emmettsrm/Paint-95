@@ -1,0 +1,234 @@
+body {
+    background-image: url("../images/paintBackground.png");
+    background-repeat: no-repeat;
+    background-position: right;
+    background-position-y: 0%;
+    background-color: whitesmoke;
+    margin-top:0px;
+}
+
+#canvas {
+    height: 500px;
+    width: 500px;
+    background-color: white;
+    position: absolute;
+    right: 38%;
+    top: 3%;
+    box-shadow: 0px 2px 10px 1px darkslategray;
+    padding: 5px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    cursor: pointer;
+}
+
+#menu {
+    height: 75vh;
+    width: 300px;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    left: 0px;
+    font-family: 'Pacifico', cursive;
+    font-size: 50px;
+    color: white;
+    text-align: center;
+}
+#submenu {
+    height: 25vh;
+    width: 300px;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    left: 0px;
+    bottom: 0px;
+    font-family: 'Pacifico', cursive;
+    font-size: 48px;
+    color: white;
+    text-align: center;
+    justify-content: center;
+    line-height: 60px;
+
+}
+#brushsize {
+    display: block;
+    font-family: 'Pacifico', cursive;
+    font-size: 28px;
+    border: none;
+    background-color: transparent;
+    text-align: center;
+    margin-left: 111px;
+    color: tomato;
+}
+
+ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    display: inline-block;
+}
+
+.round-button{
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    margin-right: 7px;
+    margin-left: 7px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    border: none;
+    cursor: pointer;
+}
+button:focus {outline:0;}
+
+.selected {
+    box-shadow: 3px 2px black;
+    height: 55px;
+    width: 55px;
+    background-image: url("../images/paintbrush.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#darkred{
+    background-color: darkred;
+}
+
+#firebrick {
+    background-color: firebrick;
+}
+
+#tomato {
+    background-color: tomato;
+}
+
+#orangered {
+    background-color: orangered;
+}
+
+#darkorange {
+    background-color: darkorange;
+}
+
+#orange {
+    background-color: orange;
+}
+
+#goldenrod {
+    background-color: goldenrod;
+}
+
+#gold {
+    background-color: gold;
+}
+
+#yellowgreen {
+    background-color: yellowgreen;
+}
+
+#olivedrab {
+    background-color: olivedrab;
+}
+
+#seagreen {
+    background-color: seagreen;
+}
+
+#teal {
+    background-color: teal;
+}
+
+#lightblue {
+    background-color: lightblue;
+}
+
+#cornflowerblue {
+    background-color: cornflowerblue;
+}
+
+#indigo {
+    background-color: indigo;
+}
+
+#rebeccapurple {
+    background-color: rebeccapurple;
+}
+
+
+#black {
+    background-color: black;
+}
+
+#white{
+    background-color: white;
+    background-image: url("../images/eraser.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.paintbrush {
+    height: 10px;
+    width: 10px;
+    position: absolute;
+    border-radius: 50%;
+    opacity: 0.7;
+}
+
+.paintbrush-lg {
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    border-radius: 50%;
+    opacity: 0.7;
+}
+
+.button-container {
+    height: 185px;
+    width: 284px;
+    overflow: hidden;
+    position: absolute;
+    bottom: -13px;
+    right: 46%;
+    background-color: transparent;
+    z-index: 1;
+
+}
+
+.inner-container {
+    height: 100%;
+    width: 100%;
+    background-color: transparent;
+    background-size: contain;
+    background-position: center;
+    background-image: url("../images/splatter.png");
+    opacity: 0.6;
+    transition: all .1s ease-in;
+}
+.inner-container:hover {
+    transform: scale(1.1);
+    opacity: 1;
+}
+
+#clear {
+    width: 300px;
+    height: fit-content;
+    font-family: 'Pacifico', cursive;
+    font-size: 45px;
+    letter-spacing: .1vw;
+    border: none;
+    background-color: transparent;
+    text-align: center;
+    padding-top: 29px;
+    padding-right: 18px;
+    transition: all .1s;
+    cursor: pointer;
+}
+#clear:hover {
+    color: black;
+    transform: scale(1.1);
+}
+label {
+    font-size: 25px;
+}
